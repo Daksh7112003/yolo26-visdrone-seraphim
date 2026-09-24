@@ -19,6 +19,9 @@ from typing import Optional
 
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    mingit_path = r"C:\Users\7daks\MinGit\cmd"
+    if os.path.exists(mingit_path) and mingit_path not in os.environ.get("PATH", ""):
+        os.environ["PATH"] = mingit_path + os.pathsep + os.environ.get("PATH", "")
 
 
 def git_push_epoch_progress(trainer):
