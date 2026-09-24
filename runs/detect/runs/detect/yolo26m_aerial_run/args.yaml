@@ -1,6 +1,6 @@
 task: detect
 mode: train
-model: yolo26m.pt
+model: runs\detect\runs\detect\yolo26m_aerial_run\weights\last.pt
 data: C:\Users\7daks\yolo26-visdrone-seraphim\configs\visdrone.yaml
 epochs: 120
 time: null
@@ -25,7 +25,7 @@ single_cls: false
 rect: false
 cos_lr: false
 close_mosaic: 15
-resume: false
+resume: runs\detect\runs\detect\yolo26m_aerial_run\weights\last.pt
 amp: true
 fraction: 1.0
 profile: false
@@ -41,7 +41,7 @@ split: val
 save_json: false
 conf: null
 iou: 0.7
-max_det: 300
+max_det: 902
 quantize: null
 dnn: false
 plots: true
