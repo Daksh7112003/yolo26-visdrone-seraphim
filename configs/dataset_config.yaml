@@ -1,0 +1,25 @@
+# Dataset Preprocessing and Balancing Configuration
+
+taxonomy:
+  num_classes: 3
+  names:
+    0: person
+    1: vehicle
+    2: drone
+
+balancing:
+  # Mode: 'full' (uses 100% of ~75k Seraphim + all VisDrone) or 'ratio'
+  mode: full          # 'full' or 'balanced'
+  drone_ratio: 1.0    # Used only if mode is 'balanced' (1.0 = ~6.4k images)
+  drone_cap: null     # Hard cap on number of drone images, or null for full dataset
+  seed: 42
+
+augmentation_presets:
+  imgsz: 640
+  mosaic: 1.0         # Crucial for small aerial objects
+  mixup: 0.15         # Blends scenes for generalizability
+  scale: 0.5          # Multi-scale jitter (0.5 to 1.5)
+  fl_gamma: 1.5       # Focal loss gamma for dense hard negative handling
+  degrees: 10.0       # Rotation jitter for drone gimbal roll
+  flipud: 0.2         # Aerial top-down vertical flip probability
+  fliplr: 0.5         # Horizontal flip probability

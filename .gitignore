@@ -1,0 +1,34 @@
+# Model Checkpoints (Heavy Binaries >100MB)
+*.pt
+*.pth
+*.onnx
+*.engine
+weights/
+
+# Dataset Binaries & Raw/Processed Images
+data/raw/
+data/processed/
+*.zip
+*.tar
+*.tar.gz
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Keep run metrics, visualizations, and logs
+!runs/**/results.csv
+!runs/**/args.yaml
+!runs/**/*.jpg
+!runs/**/*.png

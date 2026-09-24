@@ -1,0 +1,12 @@
+# Ultralytics Dataset Configuration: Merged Aerial (VisDrone + Seraphim)
+
+# Paths can be absolute or relative to this yaml / project root
+train: ../data/manifests/train_merged.txt
+val: ../data/manifests/val_merged.txt
+
+# Class Definition
+nc: 3
+names:
+  0: person
+  1: vehicle
+  2: drone

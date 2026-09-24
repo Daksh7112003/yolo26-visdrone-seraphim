@@ -1,0 +1,10 @@
+# Ultralytics Dataset Configuration: Merged Aerial (VisDrone + Seraphim)
+
+train: manifests/train_merged.txt
+val: manifests/val_merged.txt
+
+nc: 3
+names:
+  0: person
+  1: vehicle
+  2: drone

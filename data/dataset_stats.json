@@ -1,0 +1,62 @@
+{
+  "VisDrone Train": {
+    "image_count": 6471,
+    "background_images": 0,
+    "total_boxes": 343204,
+    "class_distribution": {
+      "person": 106396,
+      "vehicle": 236808,
+      "drone": 0
+    }
+  },
+  "VisDrone Val": {
+    "image_count": 548,
+    "background_images": 0,
+    "total_boxes": 38759,
+    "class_distribution": {
+      "person": 13969,
+      "vehicle": 24790,
+      "drone": 0
+    }
+  },
+  "Seraphim Train (Sampled)": {
+    "image_count": 75134,
+    "background_images": 1,
+    "total_boxes": 77614,
+    "class_distribution": {
+      "person": 0,
+      "vehicle": 0,
+      "drone": 77614
+    }
+  },
+  "Seraphim Val": {
+    "image_count": 8349,
+    "background_images": 0,
+    "total_boxes": 8626,
+    "class_distribution": {
+      "person": 0,
+      "vehicle": 0,
+      "drone": 8626
+    }
+  },
+  "Merged Train (Final)": {
+    "image_count": 81605,
+    "background_images": 1,
+    "total_boxes": 420818,
+    "class_distribution": {
+      "person": 106396,
+      "vehicle": 236808,
+      "drone": 77614
+    }
+  },
+  "Merged Val (Final)": {
+    "image_count": 8897,
+    "background_images": 0,
+    "total_boxes": 47385,
+    "class_distribution": {
+      "person": 13969,
+      "vehicle": 24790,
+      "drone": 8626
+    }
+  }
+}

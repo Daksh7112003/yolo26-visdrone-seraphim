@@ -1,0 +1,9 @@
+# Ultralytics Domain Evaluation: Seraphim Val Set Only
+
+val: ../data/manifests/val_seraphim.txt
+
+nc: 3
+names:
+  0: person
+  1: vehicle
+  2: drone

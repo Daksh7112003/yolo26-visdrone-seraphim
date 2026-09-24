@@ -1,0 +1,9 @@
+# Ultralytics Domain Evaluation: VisDrone Val Set Only
+
+val: ../data/manifests/val_visdrone.txt
+
+nc: 3
+names:
+  0: person
+  1: vehicle
+  2: drone

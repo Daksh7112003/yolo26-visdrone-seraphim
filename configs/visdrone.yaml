@@ -1,0 +1,10 @@
+# Ultralytics Dataset Configuration: VisDrone2019-DET Only (Person & Vehicle)
+
+train: ../data/manifests/train_visdrone.txt
+val: ../data/manifests/val_visdrone.txt
+
+# Classes
+nc: 2
+names:
+  0: person
+  1: vehicle
